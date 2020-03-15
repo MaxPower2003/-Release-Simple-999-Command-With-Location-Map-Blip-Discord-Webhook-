@@ -77,7 +77,7 @@ RegisterCommand('999', function(source, args)
     local location = GetStreetNameFromHashKey(street)
     local msg = table.concat(args, ' ')
     if args[1] == nil then
-        TriggerEvent('chatMessage', '^5911', {255,255,255}, ' ^7Please enter your ^1report/issue.')
+        TriggerEvent('chatMessage', '^5999', {255,255,255}, ' ^7Please enter your ^1report/issue.')
     else
         TriggerServerEvent('999', location, msg, x, y, z, name)
     end
